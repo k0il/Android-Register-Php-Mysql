@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public void register(View view)
     {
         RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
-        String url = "http://yoursite.com/register.php";
+        String url =  getResources().getString(R.string.url);
 
         StringRequest postRequest = new StringRequest(Request.Method.POST,url,
                 new Response.Listener<String>()
